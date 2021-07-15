@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+   <children>
+      <Button layoutX="519.0" layoutY="6.0" mnemonicParsing="false" onAction="#goBack" text="Main menu" />
+      <TreeView fx:id="categoryTree" layoutX="14.0" layoutY="14.0" onMouseClicked="#onSelect" prefHeight="335.0" prefWidth="200.0" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#updateClick" prefHeight="25.0" prefWidth="77.0" text="Update" />
+      <Button layoutX="137.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteClick" prefHeight="25.0" prefWidth="77.0" text="Delete" />
+      <TextField fx:id="categoryName" layoutX="220.0" layoutY="35.0" prefHeight="25.0" prefWidth="219.0" />
+      <Text layoutX="222.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <TextField fx:id="categoryAuthor" layoutX="220.0" layoutY="80.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="expenditures" layoutX="220.0" layoutY="137.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="incomes" layoutX="220.0" layoutY="196.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextArea fx:id="description" layoutX="220.0" layoutY="254.0" prefHeight="72.0" prefWidth="219.0" />
+      <Text layoutX="221.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenditures" />
+      <Text layoutX="227.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incomes" />
+      <Text layoutX="220.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+      <Text layoutX="219.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Button layoutX="220.0" layoutY="361.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="25.0" prefWidth="89.0" text="Add category" />
+      <Button layoutX="315.0" layoutY="361.0" mnemonicParsing="false" onAction="#addSubcategory" prefHeight="25.0" prefWidth="121.0" text="Add subcategory" />
+      <Button layoutX="456.0" layoutY="326.0" mnemonicParsing="false" onAction="#manageFinances" prefHeight="25.0" prefWidth="127.0" text="Manage finances" />
+      <Button layoutX="456.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Responsible people" onAction="#manageRespPeople" />
+   </children>
+</AnchorPane>

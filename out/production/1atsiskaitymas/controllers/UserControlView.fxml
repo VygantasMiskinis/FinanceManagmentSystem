@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+   <children>
+      <ListView fx:id="usersList" layoutX="32.0" layoutY="29.0" onMouseClicked="#onSelect" prefHeight="220.0" prefWidth="257.0" />
+      <TextField fx:id="userID" layoutX="32.0" layoutY="272.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="username" layoutX="32.0" layoutY="319.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="email" layoutX="176.0" layoutY="273.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="name" layoutX="32.0" layoutY="364.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="password" layoutX="176.0" layoutY="319.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="lastname" layoutX="176.0" layoutY="364.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button layoutX="560.0" layoutY="17.0" mnemonicParsing="false" onAction="#goBack" text="Main menu" />
+      <Text layoutX="32.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="179.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email" />
+      <Text layoutX="33.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+      <Text layoutX="176.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <Text layoutX="33.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" />
+      <Text layoutX="176.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="last name" />
+      <TextField fx:id="companyName" layoutX="32.0" layoutY="414.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="contactPerson" layoutX="176.0" layoutY="414.0" prefHeight="25.0" prefWidth="114.0" />
+      <Text layoutX="33.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company" />
+      <Text layoutX="176.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact person" />
+      <Button layoutX="176.0" layoutY="445.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="25.0" prefWidth="114.0" text="Update" />
+      <Button layoutX="393.0" layoutY="445.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="25.0" prefWidth="190.0" text="Add user" />
+      <Button layoutX="33.0" layoutY="445.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="25.0" prefWidth="114.0" text="Delete" />
+      <Line endX="-69.0" endY="303.29290771484375" layoutX="377.0" layoutY="199.0" startX="-69.0" startY="-205.0" />
+      <Text layoutX="114.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit and delete" />
+      <Text layoutX="425.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creating a user" />
+      <TextField fx:id="addUsername" layoutX="319.0" layoutY="223.0" />
+      <TextField fx:id="addUserEmail" layoutX="486.0" layoutY="158.0" />
+      <TextField fx:id="addUserId" layoutX="319.0" layoutY="158.0" />
+      <TextField fx:id="addPassword" layoutX="488.0" layoutY="223.0" />
+      <TextField fx:id="addName" layoutX="319.0" layoutY="285.0" />
+      <TextField fx:id="addLastName" layoutX="488.0" layoutY="285.0" />
+      <TextField fx:id="addCompanyName" layoutX="319.0" layoutY="345.0" />
+      <TextField fx:id="addContactPerson" layoutX="486.0" layoutY="345.0" />
+      <Text layoutX="388.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="535.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email" />
+      <Text layoutX="367.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+      <Text layoutX="524.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <Text layoutX="382.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" />
+      <Text layoutX="524.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="last name" />
+      <Text layoutX="351.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company name" />
+      <Text layoutX="509.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact person" />
+      <TextField fx:id="addUserType" layoutX="400.0" layoutY="402.0" />
+      <Text layoutX="405.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Type [User]/[Company]" />
+   
+   </children>
+</AnchorPane>
